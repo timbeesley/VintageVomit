@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="headtop">
+            <a id="heading" href="index.html">VintageVomit<span>.com</span></a>
+        </h1>
+    </header>
+    <ul id="navbar">
+        <li id="navlist"><a href="index.html">Home</a></li>
+        <li id="navlist"><a class="active" href="HTML.html">HTML</a></li>
+        <li id="navlist"><a href="CSS.html">CSS</a></li>
+        <li id="navlist"><a href="java.html">Java</a></li>
+        <li id="navlist"><a href="SQL.html">SQL</a></li>
+        <li id="navlist"><a href="robots.html">Robots</a></li>
+        <li id="navlist"><a href="WRX.html">WRX</a></li>
+        <li style="float:right" id="navlist"><a href="wp/">Blog</a></li>
+    </ul>
+    <div class="container">
+        <p>HTML is the front page of the Internet and a great starting point to learn programming. My experience with the the Internet predates the actual Internet. Like most of us living in the 90s, we only had one phone line. It also took about 5 minutes
+            to actually get connected. In those days you didn't leave your computer powered on. It took a good three minutes just to get a command prompt. Not to mention the hand shaking signal the modem gives off.</p>
+
+        <h2>Headings</h2>
+        <p title="I'm a tooltip">Headings are important. Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure. &lt;h1&gt; headings should be
+            used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</p>
+        <div class="indent">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+
+        <h2>HR Tag</h2>
+        <p>The HR tag defines a thematic break in an HTML page, is most often displayed as a horizontal rule. The HR element is used to separate content, or define a change, in an HTML page.</p>
+        <div class="indent">
+            <h3>This is a heading 3</h3>
+            <p>This is some text but below this line is an HR tag.</p>
+            <hr>
+            <p>This is some more text.</p>
+        </div>
+        <h2>Links</h2>
+        <p>HTML links are defined with the A tag. The link address is specified in the href attribute. See below for an example of an external link.</p>
+        <div class="indent">
+            <br>
+            <a class="URL" href="https://vintagevomit.com/wp" title="Visit my WordPress blog" target="_blank">This is a link to Wordpress blog</a>
+            <p>See below for list of available targets:</p>
+            <ul>
+                <li><b>_blank</b> - Opens the linked document in a new window or tab</li>
+                <li><b>_self</b> - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+                <li><b>_parent</b> - Opens the linked document in the parent frame</li>
+                <li><b>_top</b> - Opens the linked document in the full body of the window</li>
+            </ul>
+        </div>
+
+        <h2>Images</h2>
+        <p>HTML images are defined with the IMG tag. The alt attribute provides an alternate text for an image, if the user for some reason cannot view it. The value of the alt attribute should describe the image. The alt attribute is required. A web page
+            will not validate correctly without it. Always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads. Suggest using the style attribute. It prevents styles sheets from
+            changing the size of images.</p>
+        <div class="indent">
+
+            <img src="images/WordPress-logo.png" alt="WordPress Logo" style="width:134px;height:29px;">
+            <p>It is common to use images as links.</p>
+            <a class="image-border" href="wp/">
+                <img src="images/WordPress-logo.png" alt="HTML tutorial" style="width:134px;height:29px;">
+            </a>
+
+        </div>
+        <h2>Buttons</h2>
+        <div class="indent">
+            <p>This is an example of a button.</p>
+            <button>Click me</button>
+
+            <!-- BR tag defines a line break -->
+            <br>
+            <p>Button created with CSS.</p>
+            <a href="wp/" class="button">WordPress</a>
+        </div>
+
+        <h2>Lists</h2>
+        <p>Lists are defined with the UL, unordered/bullet list, or the OL, ordered/numbered list tag, followed by LI tags, list items.</p>
+        <div class="indent">
+            <p>Example of an unordered/bullet list.</p>
+            <ul>
+                <li>Redhead</li>
+                <li>Wife</li>
+                <li>Michelle</li>
+            </ul>
+            <ol>
+                <li>Tattoos</li>
+                <li>Sexy</li>
+                <li>Last name Thomas</li>
+            </ol>
+        </div>
+        <h2>Grid of Boxes</h2>
+        <p>Float boxes side by side:</p>
+
+        <div class="clearfix">
+            <div class="box" style="background-color:#bbb">
+                <p>Some text inside the box.</p>
+            </div>
+            <div class="box" style="background-color:#ccc">
+                <p>Some text inside the box.</p>
+            </div>
+            <div class="box" style="background-color:#ddd">
+                <p>Some text inside the box.</p>
+            </div>
+        </div>
+
+        <p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+        <h2>PRE Element</h2>
+        <p>The HTML PRE element defines preformatted text. The text inside a PRE element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks</p>
+        <div class="indent">
+            <pre>
+    My Michelle lies over the ocean.
+
+    My Michelle lies over the sea.
+
+    My Michelle lies over the ocean.
+
+    Oh, bring back my Michelle to me.
+    </pre>
+        </div>
+
+        <h3>Style Attribute</h3>
+        <p>Setting the style of an HTML element, can be done with the style attribute.</p>
+
+        <ul>
+            <li>Use <b>background-color</b> for background color</li>
+            <li>Use <b>color</b> for text colors</li>
+            <li>Use <b>font-family</b> for text fonts</li>
+            <li>Use <b>font-size</b> for text sizes</li>
+            <li>Use <b>text-align</b> for text alignment</li>
+        </ul>
+
+
+        <h3>Quotation and Citation Elements</h3>
+        <p>The Q element defines a short quotation. Browsers usually insert quotation marks around the Q element.</p>
+        <div class="indent">
+            <p>My goal is to: <q>Build a wonderful relationship with my wife.</q></p>
+        </div>
+        <p>The BLOCKQUOTE element defines a section that is quoted from another source. Browsers usually indent this element.</p>
+        <div class="indent">
+            <p>This is an example of a BLOCKQUOTE:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+            </blockquote>
+        </div>
+        <p>Use the ADDRESS element to display contact information</p>
+        <div class="indent">
+            <address>
+            Tim Beesley<br> 
+            4115 Profit Ct<br>
+            New Albany, IN<br>
+            USA
+        </address>
+        </div>
+
+        <p>See below for more elements:</p>
+        <ul>
+            <li><b>abbr</b> element defines an abbreviation or an acronym</li>
+            <li><b>cite</b> element defines the title of a work</li>
+            <li><b>bdo</b> element defines bi-directional overide</li>
+        </ul>
+
+        <h3><b>CSS</b> - Casading Style Sheets</h3>
+        <p>Fonts:</p>
+        <ul>
+            <li><b>color</b> property defines the text color to be used</li>
+            <li><b>font-family</b> property defines the font to be used</li>
+            <li><b>font-size</b> property defines the text size to be used</li>
+        </ul>
+        <P>More styles:</P>
+        <ul>
+            <li><b>border</b> property defines the border around an HTML element</li>
+            <li><b>padding</b> property defines a padding (space) between the text and the border</li>
+            <li><b>margin</b> property defines a margin (space) outside the border</li>
+        </ul>
+        <h3>The id Attribute</h3>
+        <p>To define a specific style for one special element, add an id attribute to the element.</p>
+        <div class="indent">
+            &lt;p id="p01"&gt;I am different&lt;/p&gt;
+        </div>
+        <p>Then define a style for the element with the specific id:</p>
+        <div class="indent">
+            #p01 {<br> &nbsp;&nbsp;&nbsp;color: blue;<br> }
+        </div>
+        <h3>The class Attribute</h3>
+        <p>To define a style for special types of elements, add a class attribute to the element:</p>
+        <div class="indent">
+            &lt;p class="error"&gt; I am different&lt;/p&gt;
+        </div>
+        <p>Then define a style for the elements with the specific class:</p>
+        <div class="indent">
+            p.error {<br> &nbsp;&nbsp;&nbsp;color: red;<br> }
+        </div>
+    </div>
+
+</body>
+
+</html>
